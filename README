@@ -1,0 +1,14 @@
+# -*- org -*-
+*Logging
+** [[http://docs.python.org/library/logging.html][Documentation]]
+** Examples
+*** Simplest logger usage example
+   - [[https://github.com/lmmilewski/learn_python/blob/master/log_basic.py][log_basic.py]]
+   - How to configure log output format [[https://github.com/lmmilewski/learn_python/blob/master/log_format.py][log_format.py]]
+   - How to read logger configuration from file
+     + [[https://github.com/lmmilewski/learn_python/blob/master/log_file.py][log_file.py]]
+     + [[https://github.com/lmmilewski/learn_python/blob/master/log_file.conf][log_file.conf]]
+   - Logging in many modules
+     + [[https://github.com/lmmilewski/learn_python/blob/master/log_main.py][log_main.py]]
+     + [[https://github.com/lmmilewski/learn_python/blob/master/log_1.py][log_1.py]]
+     + [[https://github.com/lmmilewski/learn_python/blob/master/log_2.py][log_2.py]]
