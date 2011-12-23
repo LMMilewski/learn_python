@@ -1,5 +1,5 @@
 # -*- org -*-
-*Logging
+* Logging
 ** [[http://docs.python.org/library/logging.html][Documentation]]
 ** Examples
 *** Simplest logger usage example
