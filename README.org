@@ -12,3 +12,6 @@
      + [[https://github.com/lmmilewski/learn_python/blob/master/log_main.py][log_main.py]]
      + [[https://github.com/lmmilewski/learn_python/blob/master/log_1.py][log_1.py]]
      + [[https://github.com/lmmilewski/learn_python/blob/master/log_2.py][log_2.py]]
+* Documentation
+  - [[https://github.com/lmmilewski/learn_python/blob/master/docstring.py][docstring.py]]
+  - based on [[http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone%3DComments#Comments][google style guide]]
