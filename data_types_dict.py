@@ -11,11 +11,12 @@ assert d2["two"] == 2
 # d2["Two"] # that raises KeyError as keys are case sensitive
 
 # you can mix types on left hand side as well as right hand side
-two = {"string": "two", "int": 2, "float": 2.0, 2: "2"}
+two = {"string": "two", "int": 2, "float": 2.0, 2: "2", (0,0): "unknown tuple"}
 assert two["string"] == "two"
 assert two["int"] == 2
 assert two["float"] == 2.0
 assert two[2] == "2"
+assert two[0, 0] == "unknown tuple"
 # but since dict is implemented using hash table (yeah, implementation
 # leaks in the interface) you can't use list/dict/set as a key (these
 # are not hashable). You would get TypeError: unhashable type.
