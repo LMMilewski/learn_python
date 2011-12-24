@@ -17,6 +17,6 @@
   - based on [[http://google-styleguide.googlecode.com/svn/trunk/pyguide.html?showone%3DComments#Comments][google style guide]]
 * Data types
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_dict.py][data_type_dict.py]]
-  - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_list.py][data_type_list.py]]
+  - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_lists.py][data_type_lists.py]]
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_tuples.py][data_type_tuples.py]]
   
