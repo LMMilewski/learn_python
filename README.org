@@ -1,4 +1,5 @@
 # -*- org -*-
+* Tested with Python2.7
 * Logging
 ** [[http://docs.python.org/library/logging.html][Documentation]]
 ** Examples
@@ -19,4 +20,26 @@
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_dict.py][data_type_dict.py]]
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_lists.py][data_type_lists.py]]
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_tuples.py][data_type_tuples.py]]
-  
+* Introspection
+** dir built-in function
+  - dir: abbrev 'directory' (list of things, not necessarily files)
+  - [[http://docs.python.org/library/functions.html#dir][dir in docs]]
+  - returns list of *attributes* of given object
+  - dir is intended for shell use, so it doesn't return all attributes
+    (for example metaclass attrs are missing)
+  - you can override what dir returns for given object by supplying
+    __dir__ method for it. Note that your class must inherit object to
+    do that
+  - funny thing is that print is a statement (not a function) in
+    Python2.x, hence you can't say dir(print)
+** vars, __dict__
+  - instance variables of object obj are stored in its __dict__
+    dictionary. You can fetch it using function vars(obj)
+** using dot operator
+   - when you use dot operator on an instance of a class A to get a
+     method foo Python first checks for foo in the instance (in its
+     __dict__)
+  - it won't find it as there are only instance variables
+  - then it looks for foo in the type of the instances - A.
+  - foo is in A.__dict__, so Python knows which method to call
+* 
