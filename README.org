@@ -42,4 +42,6 @@
   - it won't find it as there are only instance variables
   - then it looks for foo in the type of the instances - A.
   - foo is in A.__dict__, so Python knows which method to call
+** getting list of methods in class / functions in module
+   - [for m in dir(C) if callable(getattr(m, C))]
 * 
