@@ -65,14 +65,14 @@
       never False by putting it into list
 * Classes
 ** multiple inheritance
-  - [[Link:%20https://github.com/lmmilewski/learn_python/blob/master/multiple_inheritance.py][mutliple_inheritance.py]]
+  - [[https://github.com/lmmilewski/learn_python/blob/master/multiple_inheritance.py][mutliple_inheritance.py]]
 *** mro (Method Resolution Order)
    - [[http://www.python.org/download/releases/2.3/mro/][documentation]]
    - mro resides in __mro__
    - classes are in __mro__ before their base classes
    - no duplicates in __mro__
    - order of parents of all classes is preserved in __mro__
-   - there are cases for which valid mro does not exist ([[Link:%20Link:%20https://github.com/lmmilewski/learn_python/blob/master/nomro.py][nomro.py]])
+   - there are cases for which valid mro does not exist ([[https://github.com/lmmilewski/learn_python/blob/master/nomro.py][nomro.py]])
 *** super
     - super solves diamond
     - super let's you avoid stating base class explicitly when calling
