@@ -21,6 +21,7 @@
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_lists.py][data_type_lists.py]]
   - [[https://github.com/lmmilewski/learn_python/blob/master/data_types_tuples.py][data_type_tuples.py]]
 * Introspection
+  [[https://github.com/lmmilewski/learn_python/blob/master/introspection.py][introspection.py]]
 ** dir built-in function
   - dir: abbrev 'directory' (list of things, not necessarily files)
   - [[http://docs.python.org/library/functions.html#dir][dir in docs]]
