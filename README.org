@@ -44,4 +44,21 @@
   - foo is in A.__dict__, so Python knows which method to call
 ** getting list of methods in class / functions in module
    - [for m in dir(C) if callable(getattr(m, C))]
-* 
+** type
+   - you can get type of the object using type function
+     + import types
+     + type("hello world") == types.StringType
+** getattr
+   - returns None in case of failure
+   - you can provide default value using three argument getattr
+* pitfalls of using and / or used as conditional expression
+  - and / or does not return True/False but one of it's arguments
+    + or returns first argument that evaluates to True or last argument
+    + and returns first argument that evaluates to False or last argument
+  - you can simulate ?: from C with and or:
+    + B ? a : b   (python: if B then a else b) is equivalent to
+    + B and a or b - well it's not
+    + but (B and [a] or [b])[0] is
+    + the thing is that when a is False then the expression does not
+      work as expected (always b is returned). We can make sure a is
+      never False by putting it into list

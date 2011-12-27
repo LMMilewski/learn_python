@@ -50,3 +50,11 @@ for m in dir(aa):
     if callable(getattr(aa, m)):
         print m
 
+
+## using getattr
+class X(object):
+    def foo(self):
+        return 1
+
+x = X()
+assert getattr(x, "foo")() == 1
