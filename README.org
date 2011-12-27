@@ -63,3 +63,32 @@
     + the thing is that when a is False then the expression does not
       work as expected (always b is returned). We can make sure a is
       never False by putting it into list
+* Classes
+** multiple inheritance
+  - [[Link:%20https://github.com/lmmilewski/learn_python/blob/master/multiple_inheritance.py][mutliple_inheritance.py]]
+*** mro (Method Resolution Order)
+   - [[http://www.python.org/download/releases/2.3/mro/][documentation]]
+   - mro resides in __mro__
+   - classes are in __mro__ before their base classes
+   - no duplicates in __mro__
+   - order of parents of all classes is preserved in __mro__
+   - there are cases for which valid mro does not exist ([[Link:%20Link:%20https://github.com/lmmilewski/learn_python/blob/master/nomro.py][nomro.py]])
+*** super
+    - super solves diamond
+    - super let's you avoid stating base class explicitly when calling
+      methods
+    - [[http://rhettinger.wordpress.com/2011/05/26/super-considered-super/][Python super considered super]]
+    - [[http://fuhm.net/super-harmful/][Python super considered harmful]]
+      + super DOES NOT call method in super class. You say WTF? and I
+        say it calls method in class that is next in mro
+      + you don't know what arguments should be passed to next
+        method. You need to pass all arguments you got and always
+        implement methods to accept all arguments
+      + you must always use super in all methods (say you forgot to
+        call super in class that inherits only object - in method
+        __init__. objects __init__ will never be called)
+      + ...
+*** overall
+    This applies if you have complex class hierarchies and so on which
+    is unlikely unless you produce code of really bad quality. Common
+    case is "I don't care it doesn't affect me".
