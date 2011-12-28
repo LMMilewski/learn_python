@@ -92,3 +92,7 @@
     This applies if you have complex class hierarchies and so on which
     is unlikely unless you produce code of really bad quality. Common
     case is "I don't care it doesn't affect me".
+** virtual_methods
+   - [[https://github.com/lmmilewski/learn_python/blob/master/virtual.py][virtual.py]]
+   - in Python all methods are effectively virtual
+   - I couldn't find a way to use non-virtual interface idiom (c++) - anyone?
