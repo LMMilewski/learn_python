@@ -98,3 +98,5 @@
    - I couldn't find a way to use non-virtual interface idiom (c++) - anyone?
 ** subclassing built-in data types
    - [[https://github.com/lmmilewski/learn_python/blob/master/cnt_dict.py][cnt_dict.py]]
+** built-in data types sizes
+   - [[https://github.com/lmmilewski/learn_python/blob/master/bidt_size.py][bidt_dict.py]]
