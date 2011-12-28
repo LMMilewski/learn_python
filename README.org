@@ -96,3 +96,5 @@
    - [[https://github.com/lmmilewski/learn_python/blob/master/virtual.py][virtual.py]]
    - in Python all methods are effectively virtual
    - I couldn't find a way to use non-virtual interface idiom (c++) - anyone?
+** subclassing built-in data types
+   - [[https://github.com/lmmilewski/learn_python/blob/master/cnt_dict.py][cnt_dict.py]]
