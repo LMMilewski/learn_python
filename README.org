@@ -100,3 +100,5 @@
    - [[https://github.com/lmmilewski/learn_python/blob/master/cnt_dict.py][cnt_dict.py]]
 ** built-in data types sizes
    - [[https://github.com/lmmilewski/learn_python/blob/master/bidt_size.py][bidt_dict.py]]
+** you can pass classes/functions as arguments/return values treating them as objects
+   - [[https://github.com/lmmilewski/learn_python/blob/master/class_func_obj.py][class_func_obj.py]]
