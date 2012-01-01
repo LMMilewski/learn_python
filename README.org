@@ -102,3 +102,5 @@
    - [[https://github.com/lmmilewski/learn_python/blob/master/bidt_size.py][bidt_dict.py]]
 ** you can pass classes/functions as arguments/return values treating them as objects
    - [[https://github.com/lmmilewski/learn_python/blob/master/class_func_obj.py][class_func_obj.py]]
+* Regexps
+  - Operations on string [[https://github.com/lmmilewski/learn_python/blob/master/string_find.py][string_find.py]]
