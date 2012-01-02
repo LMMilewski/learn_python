@@ -133,3 +133,6 @@
     in this language but "Hello" or "World" are not. This language is
     obviously not regular - you can't build DFA that would recognize
     it. See description on [[http://en.wikipedia.org/wiki/Regular_languages][Wikipedia]]
+  - troubleshooting
+    + print regexp tree representation (re.compile(regexp, flags=re.DEBUG))
+    + comments r"\w+(?# python comment in regexp)\d+" is r"\w+\d+"
