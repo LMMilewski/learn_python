@@ -103,4 +103,24 @@
 ** you can pass classes/functions as arguments/return values treating them as objects
    - [[https://github.com/lmmilewski/learn_python/blob/master/class_func_obj.py][class_func_obj.py]]
 * Regexps
-  - Operations on string [[https://github.com/lmmilewski/learn_python/blob/master/string_find.py][string_find.py]]
+  - [[http://docs.python.org/library/re.html][Documentation]]
+  - string methods find/replace [[https://github.com/lmmilewski/learn_python/blob/master/string_find.py][string_find.py]] are good for simple cases
+  - same as above but using regexps [[https://github.com/lmmilewski/learn_python/blob/master/re_find.py][re_find.py]]
+  - [[http://docs.python.org/library/re.html#re.MatchObject][re.MatchObject]] documentation ([[https://github.com/lmmilewski/learn_python/blob/master/re_match.py][re_match.py]] - examples). Few functions:
+    + group() is the same as group(0) -> return entire match string
+    + group(id) returns subgroup number id of the match (0 - everything)
+    + group(id1, id2, ...) returns tuple of subgroups for each group id
+    + groups() returns tuple of all subgroups but 0th
+      * if you ask - yes, there is empty tuple () in python
+    + groupdict() - dict mapping all *named* groups to values
+    + start(id), end(id) - returns indices where the group matched
+    + span(id) - returns (start(id), end(id))
+    + expand(template) - see [[https://github.com/lmmilewski/learn_python/blob/master/re_match.py][re_match.py]] for an example
+  - instead of escaping backslash you can use raw strings
+    + "\\b" can be replaced with r"\b". (\b is boundary of word in re)
+    + \d works differently than \b (\b has special meaning)
+    + "\d" is the same as r"\d" and "\\d" - creepy :-)
+  - re.RegexObject methods are surprisingly different than re module functions
+    + re.RegexObject.search(string[, pos[, endpos]])
+    + re.search(pattern, string, flags=0)
+    + this is just one example - see other functions for more differences
