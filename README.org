@@ -101,7 +101,7 @@
 ** built-in data types sizes
    - [[https://github.com/lmmilewski/learn_python/blob/master/bidt_size.py][bidt_dict.py]]
 ** you can pass classes/functions as arguments/return values treating them as objects
-   - [[https://github.com/lmmilewski/learn_python/blob/master/class_func_obj.py][class_func_obj.py]]
+   - [[https://github.com/lmmilewski/learn_python/blob/master/class_func_val.py][class_func_val.py]]
 * Regexps
   - [[http://docs.python.org/library/re.html][Documentation]]
   - string methods find/replace [[https://github.com/lmmilewski/learn_python/blob/master/string_find.py][string_find.py]] are good for simple cases
