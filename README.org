@@ -124,3 +124,5 @@
     + re.RegexObject.search(string[, pos[, endpos]])
     + re.search(pattern, string, flags=0)
     + this is just one example - see other functions for more differences
+  - argument of res.sub - 'repl' can be a function!
+    + [[https://github.com/lmmilewski/learn_python/blob/master/re_sub_repl_func.py][re_sub_repl_func.py]]
