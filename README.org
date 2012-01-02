@@ -136,3 +136,6 @@
   - troubleshooting
     + print regexp tree representation (re.compile(regexp, flags=re.DEBUG))
     + comments r"\w+(?# python comment in regexp)\d+" is r"\w+\d+"
+    + using flags=re.X (re.VERBOSE) you can write regexps that don't
+      look like result of MD5 function. You can write regexp in
+      multiple lines and add comments using # as usually. [[http://docs.python.org/library/re.html#re.X][re.X documentation]]
