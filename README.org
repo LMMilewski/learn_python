@@ -126,3 +126,10 @@
     + this is just one example - see other functions for more differences
   - argument of res.sub - 'repl' can be a function!
     + [[https://github.com/lmmilewski/learn_python/blob/master/re_sub_repl_func.py][re_sub_repl_func.py]]
+  - regexps in Python are not regular - you can describe language that
+    is not regular using Python regexps. For example r"(\w+)\1"
+    describes language of all words composed of two identical parts
+    glued together. For example words "HelloHello", "WorldWorld" are
+    in this language but "Hello" or "World" are not. This language is
+    obviously not regular - you can't build DFA that would recognize
+    it. See description on [[http://en.wikipedia.org/wiki/Regular_languages][Wikipedia]]
