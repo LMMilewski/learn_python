@@ -50,10 +50,21 @@
      + import types
      + type("hello world") == types.StringType
    - use isinstance if you want to include subclasses as well
-     + isinstance("hello world", types.StringType) will also work for objects subclassing string
-     + isinstance accepts tuples: isinstance("hello world", types.StringTypes) can be used to detect unicode strings as well (types.StringTypes is equal to (types.StringType, types.UnicodeType))
+     + isinstance("hello world", types.StringType) will also work for
+       objects subclassing string
+     + isinstance accepts tuples: isinstance("hello world",
+       types.StringTypes) can be used to detect unicode strings as
+       well (types.StringTypes is equal to (types.StringType,
+       types.UnicodeType))
      + alternatively, use isinstance("hello world", basestring)
-   - In Python types and classes are often constructed on the fly and there's no strict class hierarchy. Instead of checking type() or isinstance() a common programming idiom is to try to do whatever you want with the object and handle errors gracefully. This is known as EAFAP (Easier to Ask Forgiveness than Permission) style. See http://en.wikipedia.org/wiki/Duck_typing#In_Python
+   - In Python types and classes are often constructed on the fly and
+     there's no strict class hierarchy. Instead of checking type() or
+     isinstance() a common programming idiom is to try to do whatever
+     you want with the object and handle errors gracefully. This is
+     known as EAFP (Easier to Ask Forgiveness than Permission)
+     style.
+     + [[http://en.wikipedia.org/wiki/Duck_typing#In_Python][Explanation on Wikipedia]]
+     + [[http://docs.python.org/glossary.html#term-eafp][Python glossary]]
 ** getattr
    - returns None in case of failure
    - you can provide default value using three argument getattr
