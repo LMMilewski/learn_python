@@ -140,3 +140,18 @@
     + re.RegexObject.search(string[, pos[, endpos]])
     + re.search(pattern, string, flags=0)
     + this is just one example - see other functions for more differences
+  - argument of res.sub - 'repl' can be a function!
+    + [[https://github.com/lmmilewski/learn_python/blob/master/re_sub_repl_func.py][re_sub_repl_func.py]]
+  - regexps in Python are not regular - you can describe language that
+    is not regular using Python regexps. For example r"(\w+)\1"
+    describes language of all words composed of two identical parts
+    glued together. For example words "HelloHello", "WorldWorld" are
+    in this language but "Hello" or "World" are not. This language is
+    obviously not regular - you can't build DFA that would recognize
+    it. See description on [[http://en.wikipedia.org/wiki/Regular_languages][Wikipedia]]
+  - troubleshooting
+    + print regexp tree representation (re.compile(regexp, flags=re.DEBUG))
+    + comments r"\w+(?# python comment in regexp)\d+" is r"\w+\d+"
+    + using flags=re.X (re.VERBOSE) you can write regexps that don't
+      look like result of MD5 function. You can write regexp in
+      multiple lines and add comments using # as usually. [[http://docs.python.org/library/re.html#re.X][re.X documentation]]
