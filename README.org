@@ -160,6 +160,20 @@
     + using flags=re.X (re.VERBOSE) you can write regexps that don't
       look like result of MD5 function. You can write regexp in
       multiple lines and add comments using # as usually. [[http://docs.python.org/library/re.html#re.X][re.X documentation]]
-* Subclassing patterns
+* Subclassing
   - [[http://www.youtube.com/watch?NR%3D1&feature%3Dendscreen&v%3DmiGolgp9xq8][Talk from PyCon2012]]
-  - dynamic_dispatch.py
+    - classes are dictionaries of functions
+    - subclasses point to other dictionaries to reuse their code
+    - subclasses are in complete control of what happens
+  - [[https://github.com/lmmilewski/learn_python/blob/master/dynamic_dispatch.py][dynamic_dispatch.py]]
+  - LSP (Liskov Substitution Principle)
+    - "If S is a subtype of T, then objects of type T may be replaced
+      with objects of type S"
+    - LSP is usefull. but it's ok (and common) to violate it (list
+      can't be substituted by array due to constructor args)
+  - OCP (Open-Closed Principle)
+    - "Objects have internal invariants and subclasses shouldn't be
+      able to break those invariants"
+    - In other words, the classes capabilities can be extended but the
+      underlying class shouldn't get broken
+      - [[https://github.com/lmmilewski/learn_python/blob/master/][open_closed_dict.py]]
