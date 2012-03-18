@@ -177,11 +177,19 @@
     - In other words, the classes capabilities can be extended but the
       underlying class shouldn't get broken
       - [[https://github.com/lmmilewski/learn_python/blob/master/open_closed_dict.py][open_closed_dict.py]]
-* Decorators & Context Managers
-  - [[http://goo.gl/WkH2M][TechTalk from PyCon2012]]
+* Decorators
+  - [[http://goo.gl/WkH2M][TechTalk from PyCon2012]] (first part)
   - [[https://github.com/lmmilewski/learn_python/blob/master/decorators.py][decorators.py]]
     - decorator is a function that takes function/class and returns
       new function/class. Can modify the object however it wants
     - doesn't preserve __doc__ etc.
     - you can have decorators with arguments by creating function that
       returns decorator
+* Context Managers - 'with' (like RAII)
+  - [[http://goo.gl/WkH2M][TechTalk from PyCon2012]] (second part)
+  - You can define them using classes or @contextlib.contextmanager
+    decorator
+  - You can use multiple context managers in the same 'with' statement (2.7+)
+  - contextlib.closing will call close for you
+  - You can handle exceptions in __exit__ (if you return True python
+    thinks you handled the exception)
