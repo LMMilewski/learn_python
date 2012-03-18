@@ -193,3 +193,4 @@
   - contextlib.closing will call close for you
   - You can handle exceptions in __exit__ (if you return True python
     thinks you handled the exception)
+  - [[https://github.com/lmmilewski/learn_python/blob/master/context_managers.py][context_manageres.py]]
