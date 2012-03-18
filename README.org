@@ -1,5 +1,8 @@
 # -*- org -*-
 * Tested with Python2.7
+* Python manifesto
+  - import this
+  - [[http://artifex.org/~hblanks/talks/2011/pep20_by_example.html][Python manifesto by example]]
 * "I hate the code and I want as little of it as possible"
   - [[http://goo.gl/t4Wut][Talk from PyCon2012]]
   - We should add a lot of features not a lot of code
@@ -194,3 +197,5 @@
   - You can handle exceptions in __exit__ (if you return True python
     thinks you handled the exception)
   - [[https://github.com/lmmilewski/learn_python/blob/master/context_managers.py][context_manageres.py]]
+* Metaclasses
+  - [[http://www.youtube.com/watch?v=ANhTacigaf8&context=C483a0aaADvjVQa1PpcFPQunG_ULh73Q7jJx1XCQ3ANoCeuBNaNjw=][TechTalk from 2012]]
