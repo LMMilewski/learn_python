@@ -177,3 +177,11 @@
     - In other words, the classes capabilities can be extended but the
       underlying class shouldn't get broken
       - [[https://github.com/lmmilewski/learn_python/blob/master/open_closed_dict.py][open_closed_dict.py]]
+* Decorators & Context Managers
+  - [[http://goo.gl/WkH2M][TechTalk from PyCon2012]]
+  - [[https://github.com/lmmilewski/learn_python/blob/master/decorators.py][decorators.py]]
+    - decorator is a function that takes function/class and returns
+      new function/class. Can modify the object however it wants
+    - doesn't preserve __doc__ etc.
+    - you can have decorators with arguments by creating function that
+      returns decorator
