@@ -1,7 +1,7 @@
 # -*- org -*-
 * Tested with Python2.7
 * "I hate the code and I want as little of it as possible"
-  - [[http://www.youtube.com/watch?feature%3Dplayer_embedded&v%3Do9pEzgHorH0#!][Great talk on how classes are often abused]]
+  - [[http://www.youtube.com/watch?feature%3Dplayer_embedded&v%3Do9pEzgHorH0#!][Talk from PyCon2012]]
   - We should add a lot of features not a lot of code
   - We have customers because we have features, not because we have
     tons of code
@@ -161,3 +161,5 @@
       look like result of MD5 function. You can write regexp in
       multiple lines and add comments using # as usually. [[http://docs.python.org/library/re.html#re.X][re.X documentation]]
 * Subclassing patterns
+  - [[http://www.youtube.com/watch?NR%3D1&feature%3Dendscreen&v%3DmiGolgp9xq8][Talk from PyCon2012]]
+  - dynamic_dispatch.py
