@@ -199,3 +199,14 @@
   - [[https://github.com/lmmilewski/learn_python/blob/master/context_managers.py][context_manageres.py]]
 * Metaclasses
   - [[http://www.youtube.com/watch?v=ANhTacigaf8&context=C483a0aaADvjVQa1PpcFPQunG_ULh73Q7jJx1XCQ3ANoCeuBNaNjw=][TechTalk from 2012]]
+  - [[https://github.com/lmmilewski/learn_python/blob/master/metaclasses.py][metaclasses.py]]
+  - [[http://blog.ianbicking.org/a-conservative-metaclass.html][Blog post by Ian Bicking]]
+  - [[http://goo.gl/1YfI0][Stack Overflow question]]
+  - [[http://goo.gl/VWfAc][Implementing singleton /w metaclass - Stack Overflow]]
+  - meta classes to classes are as classes to instances
+  - type of metaclasses is 'type'
+  - you use __metaclass__ = MyMetaClass to use metaclass
+  - when to use?
+    - when some information about the class is known only at run-time
+  - you can tinker with base classes, name of the class and it's
+    attriutes. You can even create instances of different class!
